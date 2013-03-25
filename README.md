@@ -6,4 +6,4 @@
 
 # Description #
 
-Citations I use in my work on kernel adaptive filtering.
+References on kernel adaptive filtering.
