@@ -1,7 +1,12 @@
+@STRING{nips = {Advances in Neural Information Processing Systems}}
 @STRING{ieee-tsp = {IEEE Transactions on Signal Processing}}
 @STRING{ieee-spm = {IEEE Signal Processing Magazine}}
 @STRING{ieee-tnn = {IEEE Transactions on Neural Networks}}
 @STRING{ieee-tnnls = {IEEE Transactions on Neural Networks and Learning Systems}}
+@STRING{ieee-mlsp = {IEEE International Workshop on Machine Learning for Signal Processing (MLSP)}}
+@STRING{ieee-icassp = {IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP)}}
+
+
 
 @book{rasmussen2006gaussian,
   author = {C. E. Rasmussen and C. K. I. Williams},
@@ -9,15 +14,6 @@
   year = {2006},
   publisher = {MIT Press},
   pages = {272}
-}
-
-@article{silverman1985some,
-  author = "B. W. Silverman",
-  title = {Some Aspects of the Spline Smoothing Approach to Non-Parametric Regression Curve Fitting},
-  pages = {1--52},
-  volume = {47},
-  journal = "Journal of the Royal Statistical Society",
-  year = 1985
 }
 
 @article{csato2002sparseonline,
@@ -34,7 +30,7 @@
 @incollection{csato2002sparserepresentation,
   title={Sparse representation for {Gaussian} process models},
   author={Csat{\'o}, Lehel and Opper, Manfred},
-  booktitle={Advances in Neural Information Processing Systems 13},
+  booktitle=nips # { 13},
   pages={444-450},
   isbn={0262122413},
   year={2001},
@@ -53,7 +49,7 @@
 
 @book{sayed2003fundamentals,
   title={Fundamentals of adaptive filtering},
-  author={Sayed, A.H.},
+  author={Sayed, Ali H.},
   isbn={0471461261},
   year={2003},
   publisher={Wiley-IEEE Press}
@@ -105,7 +101,7 @@
 @inproceedings{vanvaerenbergh2010fixed,
    author = {Van Vaerenbergh, Steven and Santamar\'ia, Ignacio and Liu, Weifeng and Pr\'incipe, Jos\'e C.},
    title = {Fixed-Budget Kernel Recursive Least-Squares},
-   booktitle = {IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP 2010)},
+   booktitle = {2010 } # ieee-icassp,
    year = {2010},
    address = {Dallas, USA},
    month = apr,
@@ -114,7 +110,7 @@
 @incollection{dekel2006forgetron,
   author = {Dekel, Ofer and Shalev-Shwartz, Shai and Singer, Yoram},
   title = {The Forgetron: A Kernel-Based Perceptron on a Fixed Budget},
-  booktitle = {Advances in Neural Information Processing Systems 18},
+  booktitle = nips # { 18},
   editor = {Y. Weiss and B. Sch\"{o}lkopf and J. Platt},
   publisher = {MIT Press},
   address = {Cambridge, MA},
@@ -125,7 +121,7 @@
 @inproceedings{vanvaerenbergh2006sliding,
   title={A sliding-window kernel {RLS} algorithm and its application to nonlinear channel identification},
   author={Van Vaerenbergh, Steven and V\'ia, Javier and Santamar\'ia, Ignacio},
-  booktitle={IEEE International Conference on Acoustics, Speech and Signal Processing Proceedings (ICASSP 2006)},
+  booktitle={2006 } # ieee-icassp,
   year = {2006},
   address = {Toulouse, France},
   month = may,
@@ -179,7 +175,7 @@
 @incollection{williams2001using,
   author = {Christopher Williams and Matthias Seeger},
   title = {Using the {N}ystr\"{o}m Method to Speed Up Kernel Machines},
-  booktitle = {Advances in Neural Information Processing Systems},
+  booktitle = nips,
   editor = {Leen, Todd K. and Dietterich, Thomas G. and Tresp, Volker},
   vol = {13},
   year = {2000},
@@ -191,7 +187,7 @@
 @article{lecun1990optimal,
   title={Optimal brain damage},
   author={Le Cun, Yann and Denker, John S. and Solla, Sara A.},
-  journal={Advances in Neural Information Processing Systems},
+  journal=NIPS,
   volume={2},
   editor={Touretzky, David S.},
   number={1},
@@ -269,17 +265,6 @@
   timestamp = {2007.04.30}
 }
 
-@article{vanvaerenbergh2008adaptive,
-  author = {Van Vaerenbergh, Steven and V{\'i}a, Javier and Santamar{\'i}a, Ignacio},
-  title = {Adaptive Kernel Canonical Correlation Analysis Algorithms for Nonparametric Identification of {Wiener} and {Hammerstein} Systems},
-  journal = {EURASIP Journal on Advances in Signal Processing},
-  year = {2008},
-  volume = {1, Article ID 875351, 13 pages},
-  month = apr,
-  doi = {10.1155/2008/875351},
-  timestamp = {2008.03.03}
-}
-
 @article{liu2009extended,
   author={Liu, Weifeng and Park, Il and Wang, Yiwen and Pr\'incipe, Jos\'e C.},
   journal=ieee-tsp,
@@ -294,8 +279,8 @@
 }
 
 @INPROCEEDINGS{lazaro2011bayesian,
-  author={L\'azaro-Gredilla, M. and Van Vaerenbergh, Steven and Santamar\'ia, Ignacio},
-  booktitle={2011 IEEE International Workshop on Machine Learning for Signal Processing (MLSP)},
+  author={L\'azaro-Gredilla, Miguel and Van Vaerenbergh, Steven and Santamar\'ia, Ignacio},
+  booktitle= {2011 } # ieee-mlsp,
   title={A {Bayesian} approach to tracking with kernel recursive least-squares},
   year={2011},
   month=sep,
@@ -376,7 +361,7 @@
 @conference {vanvaerenbergh2012estimation,
   author = {Van Vaerenbergh, Steven and Santamar{\'\i}a, Ignacio and L{\'a}zaro-Gredilla, Miguel},
   title = {Estimation of the Forgetting Factor in Kernel Recursive Least Squares},
-  booktitle = {2012 IEEE International Workshop On Machine Learning For Signal Processing (MLSP)},
+  booktitle = {2012 } # ieee-mlsp,
   year = {2012},
   month = sep,
   doi = {10.1109/MLSP.2012.6349749}, 
